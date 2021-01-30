@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Gallary | AsgArts</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="gallary-style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <div class="header-p">
+            <div class="container">
+
+                <div class="navbar">
+                    <div class="logo">
+                        <a href="index.html"><img src="images/blackT.png" width="100px"></a>
+                    </div>
+                    <nav>
+                        <ul id="MenuItems">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="product.html">Product</a></li>
+                            <li><a href="gallary.html">Gallary</a></li>
+                            <li><a href="">About</a></li>
+                            <li><a href="">Contact</a></li>
+                            <li><a href="account.html">Account</a></li>
+                        </ul>
+                    </nav>
+                    <img src="images/carticon.png" height="30px" width="30px">
+                    <img src="images/menu.png"  class="menu-icon" onclick="menutoggle()">
+                </div>
+            </div>
+        </div>
+        <div style="margin-top:-70px ;"></div>
+        <!--- --------------  GALLARY Item List----------------------- -->        
+        <section class="section-spacing bottom-none inverse-bg">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="section-title text-center">
+                            <h2><span></span></h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <ul id="filter-list">
+                            <li class="filter active" data-filter="all">ALL</li>
+                            <li class="filter" data-filter="pen">Pen Potraits</li>
+                            <li class="filter" data-filter="merged">Merged Series</li>
+                            <li class="filter" data-filter="pencil">Charcol/Pencil work</li>
+                            <li class="filter" data-filter="couple">Couple Series</li>
+                            <li class="filter" data-filter="water">Acyralic/Water Colour</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!----------------------- GALLARY IMAGES------------------->
+        
+        
+        <div class="small-container product">
+            <div class="row" >
+                <div class="col-4 itemBox couple">
+                    <img src="images/crop/couple.jpg">
+                </div>
+                <div class="col-4 itemBox merged">
+                    <img src="images/crop/friends.jpg">
+                </div>
+                <div class="col-4 itemBox pen">
+                    <img src="images/crop/Lonee.jpg">
+                </div>
+                <div class="col-4 itemBox pencil">
+                    <img src="images/crop/pencil.jpg">
+                </div>
+                <div class="col-4 itemBox merged">
+                    <img src="images/crop/vinit.jpg">
+                </div>
+                <div class="col-4 itemBox water">
+                    <img src="images/crop/Energy of love.jpg">
+                </div>
+                <div class="col-4 itemBox water">
+                    <img src="images/crop/Scarlet's blue gold chew.jpg">
+                </div>
+            
+            </div>
+        </div>
+        
+        
+        <!--     FOOTER-->
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col-1">
+                        <p style="font-size: large;">If you like it,<br>let's talk </p>
+                        <br><br><br><br>
+                        <ul>
+                            <li><i class="fa fa-map-marker"></i> INDIA</li>
+                            <li><i class="fa fa-whatsapp"></i> +91 XXXXXXXXXX</li>
+                            <li><i class="fa fa-envelope-o"></i> artist@gmail.com</li>
+                        </ul>
+                    </div>
+                    <div class="footer-col-5">
+                        <img src="images/whiteTlogo.png" width="150px">
+                        <h3 style="text-align: left;">Shipping Partner</h3>
+                        <ul style="text-align: left;">
+                            <li><img src="images/dtdc.png" width="150px" style="filter: grayscale(100%);"></li>
+                            <li><img src="images/FedEx_Express_logo.png" width="150px" style="filter: grayscale(100%);"></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col-2">
+                        <h3 style="text-align: left;">Useful Links</h3>
+                        <ul style="text-align: left;">
+                            <li>Coupons</li>
+                            <li>Blog Post</li>
+                            <li>Return Policy</li>
+                            <li>Join Affiliate</li>
+                        </ul>
+                    </div>
+                    <div class="footer-col-3" >
+                        <h3 style="text-align: left;">Follow Us</h3>
+                        <ul style="text-align: left;">
+                            <li><i class="fa fa-facebook"></i>    Facebook</li>
+                            <li><i class="fa fa-instagram"></i>   Instagram</li>
+                            <li><i class="fa fa-pinterest-p"></i>    Pintrest</li>
+                            <li><i class="fa fa-twitter"></i>    Twitter</li>
+                        </ul>
+                    </div>
+                    <div class="footer-col-4" >
+                        <h3 style="text-align: left;">Questions? Contact us</h3>
+                        <div class="contact-form">
+                            <form>
+                                <div class="input-container">
+                                  <i class="fa fa-user icon"></i>
+                                  <input class="input-field" type="text" placeholder="Name" name="name">
+                                </div>
+                              
+                                <div class="input-container">
+                                  <i class="fa fa-envelope icon"></i>
+                                  <input class="input-field" type="text" placeholder="Email" name="email">
+                                </div>
+                              
+                                <div class="input-container">
+                                  <i class="fa fa-comments-o icon"></i>
+                                  <textarea class="input-field" rows="3" cols="50"  placeholder="Message/Query"></textarea>
+                                </div>
+                              
+                                <button type="submit" class="btn" style="margin-top: 0px">SEND</button>
+                            </form> 
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <p class="copyright"> Copyright 2021- ABHISHEK GHOSH</p>
+            </div>
+        </div>
+
+    </body>
+
+
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+        MenuItems.style.maxHeight="0px";
+        
+        function menutoggle(){
+            if(MenuItems.style.maxHeight == "0px"){
+                MenuItems.style.maxHeight="200px"
+            }
+            else{
+                MenuItems.style.maxHeight="0px"
+            }
+        }
+    </script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+    integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+       $(document).ready(function(){
+           $(".filter").click(function(){
+               const value = $(this).attr('data-filter');
+               if(value == 'all'){
+                   $('.itemBox').show('1000');
+               }
+               else{
+                   $('.itemBox').not('.'+value).hide('1000');
+                   $('.itemBox').filter('.'+value).show('1000');
+               }
+           })
+           // add Active class
+           $('.filter').click(function(){
+               $(this).addClass('active').siblings().removeClass('active');
+           })
+       });
+   </script>
+</html>
